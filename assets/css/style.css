@@ -1,0 +1,67 @@
+.body{
+	background: linear-gradient(#76278f ,#2b1e66 );
+}
+.content{
+	color:#c6af87;
+	height: 100vh;
+	width: 100%;
+	max-height: 100%;
+	text-transform: uppercase;
+	font-weight: bolder;
+	z-index: 100;
+	position: absolute;
+	padding-top: 40vh;
+	background: linear-gradient(#76278f ,#2b1e66 );
+}
+
+.logo{
+	height: 10vh;
+	width: 80%;
+	padding-bottom: 10px;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.loanding{
+	padding-left: 60px;
+}
+.box{
+	margin: 0;
+	padding: 0;
+	margin-left: 60px;
+	border-width:50px;
+	width: 40vh;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+	border-color: #2b1e66 ;
+	animation-name:first;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+}
+@keyframes first{
+	0% {border-color: #2b1e66 transparent transparent transparent;}
+	25% {border-color:transparent #2b1e66 transparent transparent;}
+	50% {border-color:transparent transparent #2b1e66 transparent;}
+	75% {border-color:transparent transparent transparent #2b1e66 7;}
+	100% {border-color: #2b1e66 transparent transparent transparent; }
+}
+
+.content2{
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../img/taxi.jpg);
+}
+
+.navbar-brand img{
+	height: 30px;
+	width: 20%;
+}
+
+.footer{
+	margin-top: 80vh;
+}
