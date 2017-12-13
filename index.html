@@ -23,8 +23,36 @@
 			</div>
 		</div>
 	</div>
+	<!-- modal singup -->
+	<div class="modal singup" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		<div class="modal-dialog modal-sm container" role="document">
+			<div class="modal-content row">
+				<div class="form-group" id="formulario">
+					<label class="col-xs-12 control-label text-center" for="typeHypo">Sing Up</label>
+					<div class="col-xs-6">
+						<select id="typeHypo" name="typeHypo" class="form-control">
+							<option value="1">Chile</option>
+							<option value="2">Argentina</option>
+							<option value="3">Peru</option>
+							<option value="4">México</option>
+						</select>
+					</div>
+					<div class="col-xs-6">
+						<input id="telefono" class="form-control" type="text" placeholder="+56" required>
+					</div>
+					<div class="modal-footer next">
+					<div class="row">
+						<div class="col-xs-12">
+							<p class="text-center">Enviaremos un texto verificando su número</p>
+							<button id="next" type="submit" class="btn btn-primary btn-lg btn-block">Next</button>
+						</div>
+						</div>
+					</div>
+				</div><!--form dropdown-->
+			</div>
+		</div>
+	</div><!--modal->
 	<!--header-->
-	
 	<div class="content2 container-fluid" style="display:none">
 		<nav class="navbar">
 			<div class="container-fluid">
@@ -42,7 +70,7 @@
 					<button class="btn btn-primary descarga btn-lg btn-group center-block">Log In</button>
 				</div>
 				<div class="col-xs-6">
-					<button class=" btn btn-warning descarga btn-lg btn-group center-block">Sing Up</button>
+					<button data-toggle="modal" data-target=".singup" class=" btn btn-warning descarga btn-lg btn-group center-block">Sing Up</button>
 				</div>
 			</div>
 
