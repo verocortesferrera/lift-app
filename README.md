@@ -1,16 +1,16 @@
-#LYFT APP
-+APP versión móvil
+# LYFT APP
++ APP versión móvil
 
-##Funcionalidades:
+## Funcionalidades:
 
-####cosas que funcionan hasta el momento:
+#### Cosas que funcionan hasta el momento:
 
-*Splash inicial
+* Splash inicial
 
-**Boton sign up
+** Boton sign up
 
-**activa un modal para ingresar número:
-+++deja que sólo se ingresen números.
-+++al ingresar letras avisa ingresar números.
-+++se detiene al intentar meter más números.
-+++se activa el boton NEXT al ingresar 9 digitos.
+** Activa un modal para ingresar número:
++++ deja que sólo se ingresen números.
++++ Al ingresar letras avisa ingresar números.
++++ Se detiene al intentar meter más números.
++++ Se activa el boton NEXT al ingresar 9 digitos.
