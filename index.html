@@ -17,9 +17,9 @@
 	<div class="container-fluid content">
 		<div class="row">
 			<div class="col-xs-6 col-sm-6 col-xs-push-3">
-				<img class="logo" src="assets/img/logo-white.png" alt="logo">
+				<img class="logo img-responsive" src="assets/img/logo-white.png" alt="logo">
 				<!--loading-->
-				<div class="col-xs-1 box col-sm-push-4 text-center loanding"></div>
+				<div class="col-xs-12 box col-sm-1 col-sm-push-4 center-block loanding"></div>
 			</div>
 		</div>
 	</div>
@@ -27,8 +27,9 @@
 	<div class="modal singup" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
 		<div class="modal-dialog modal-sm container" role="document">
 			<div class="modal-content row">
+				<a href="#" id="atras" class="atras glyphicon glyphicon-share-alt"></a>
+				<label class="col-xs-12 control-label text-center" for="typeHypo">Sing Up</label>
 				<div class="form-group" id="formulario">
-					<label class="col-xs-12 control-label text-center" for="typeHypo">Sing Up</label>
 					<div class="col-xs-6">
 						<select id="typeHypo" name="typeHypo" class="form-control">
 							<option value="1">Chile</option>
@@ -37,28 +38,44 @@
 							<option value="4">México</option>
 						</select>
 					</div>
-					<div class="col-xs-6">
-						<input id="telefono" class="form-control" type="text" placeholder="+56" required>
+					<div class="col-xs-6 form-group">
+						<div class="form-group">
+							<input id="telephone" name="telephone" class="form-control" type="tel" placeholder="teléfono" required>
+						</div>
+						<p id="alert"></p>
 					</div>
 					<div class="modal-footer next">
 					<div class="row">
 						<div class="col-xs-12">
-							<p class="text-center">Enviaremos un texto verificando su número</p>
-							<button id="next" type="submit" class="btn btn-primary btn-lg btn-block">Next</button>
+							<p class="text-center">Enviaremos un msm verificando su número</p>
+							<button data-toggle="modal" data-target="#mycode" id="next" type="submit" class="btn btn-primary btn-lg btn-block">Next</button>
 						</div>
 						</div>
 					</div>
 				</div><!--form dropdown-->
 			</div>
 		</div>
-	</div><!--modal->
+	</div><!--modal-->
+
+	<div class="modal fade generator" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p>Tu código es: <span>LAB-</span><span id="code"></span></p>
+				</div>
+				<button id="codeButton"  type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+    </div>
+  </div>
+</div>
+
 	<!--header-->
 	<div class="content2 container-fluid" style="display:none">
 		<nav class="navbar">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#">
-						<img class="loghead center-block" alt="logo" src="assets/img/logo-pink.png">
+						<img class="loghead center-block img-responsive" alt="logo" src="assets/img/logo-pink.png">
 					</a>
 				</div>
 			</div>

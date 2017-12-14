@@ -8,22 +8,33 @@ $(document).ready(function() {
 		});
 });
 
-$("#formulario").submit(function () {  
-    if(isNaN($("#telefono").val())) {  
-        alert("El teléfono solo debe contener números");  
-        return false;  
-    }  
-    return false;  
-});  
+/*ingresar numero y activar el boton*/
+ $('#telephone').keyup(function(){
+		if($(this).val().length === 10){
+			$('#next').removeClass('disabled');
+		}if($(this).val().length < 10){
+			$('#next').addClass('disabled');
+		}if($(this).val().length > 10){
+			$('#next').addClass('disabled');
+			$('#telephone').prop('disabled',true);/*detener el input*/
+			$('#telephone').prop('disabled',false);/*volver a activar*/
+		}if (isNaN($(this).val())){
+			$('#alert').text('Sólo Números');
+			$('#next').addClass('disabled');
+		}else{
+			$('#alert').text('');
+		}
+		return false;
+	});
 
-$('#number').keyup(function(){
-	var number = $('#number').val();
-	number.val('');
-	if(number==10)
-	function code() {
-  var code = "";
-  /*var str = "123456789";*/
-  for (var i = 0; i < 3; i++) {
+/*$('#number').keyup(function(){
+	*var number = $('#number').val();
+	*number.val('');
+	*if(number==10)
+	*function code() {
+  *var code = "";
+  **var str = "123456789";
+  *for (var i = 0; i < 3; i++) {
   	code += number.charAt(Math.floor(Math.random() * str.length));
   }
   return code;
@@ -35,7 +46,7 @@ alert(code());
 
 function code() {
   var code = "";
-  /*var str = "123456789";*/
+  *var str = "123456789";
   for (var i = 0; i < 3; i++) {
   	code += number.charAt(Math.floor(Math.random() * str.length));
   }
@@ -43,3 +54,4 @@ function code() {
 }
 
 alert(code());
+*/

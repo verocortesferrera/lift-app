@@ -30,10 +30,9 @@
 .box{
 	margin: 0;
 	padding: 0;
-	margin-left: 60px;
+	margin-left: 20px;
 	border-width:50px;
-	width: 40vh;
-	margin-left: auto;
+	width: 10vh;
 	margin-right: auto;
 	border-style: solid;
 	border-color: #2b1e66 ;
