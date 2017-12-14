@@ -45,29 +45,20 @@
 						<p id="alert"></p>
 					</div>
 					<div class="modal-footer next">
-					<div class="row">
-						<div class="col-xs-12">
-							<p class="text-center">Enviaremos un msm verificando su número</p>
-							<button data-toggle="modal" data-target="#generator" id="next" type="submit" class="btn btn-primary btn-lg btn-block disabled">Next</button>
-						</div>
+						<p class="text-center">Enviaremos un msm verificando su número</p>
+						<div class="row">
+							<div class="col-xs-6">
+								<button data-toggle="modal" data-target="#codigo" id="next" type="submit" class="btn btn-primary btn-lg btn-block disabled">Next</button>
+							</div>
+							<div class="col-sx-6">
+								<button id="val" type="submit" class="btn btn-warning btn-lg">Validar</button>
+							</div>
 						</div>
 					</div>
 				</div><!--form dropdown-->
 			</div>
 		</div>
 	</div><!--modal-->
-	<!--modal codigo-->
-	<div class="modal fade generator" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-		<div class="modal-dialog modal-sm" role="document">
-			<div class="modal-content">
-				<div class="modal-body">
-					<p>Tu código es: <span>LAB-</span><span id="code"></span></p>
-				</div>
-				<button id="codeButton"  type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
-    </div>
-  </div>
-</div><!--modalcodigo-->
 
 	<!--header-->
 	<div class="content2 container-fluid" style="display:none">
@@ -90,8 +81,14 @@
 					<button data-toggle="modal" data-target=".singup" class=" btn btn-warning descarga btn-lg btn-group center-block">Sign Up</button>
 				</div>
 			</div>
-
+ </div>
 	</div><!--container-->
+	<!--section validador-->
+	<section class='container-fluid validador' style='display:none'>
+        <h3>Verifica el Código</h3>
+        <p>Ingresa el numero</p>
+        <label for=''>LAB-</label><input name='code' type='tel' placeholder='3 digits' required>
+    </section>
 
 
 	

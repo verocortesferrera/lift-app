@@ -39,7 +39,12 @@ function code(){
 	alert('tu codigo es: LAB-' + code);
 }
 
+$('#val').click(validar);
 
+function validar(){
+	$('.validador').show();
+	$('.content2').hide();
+	}
 
 
 
