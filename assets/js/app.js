@@ -27,31 +27,22 @@ $(document).ready(function() {
 		return false;
 	});
 
-/*$('#number').keyup(function(){
-	*var number = $('#number').val();
-	*number.val('');
-	*if(number==10)
-	*function code() {
-  *var code = "";
-  **var str = "123456789";
-  *for (var i = 0; i < 3; i++) {
-  	code += number.charAt(Math.floor(Math.random() * str.length));
-  }
-  return code;
+/*aparecer codigo*/
+$('#next').click(code);
+
+function code(){
+	var code = "";
+	var str = ('123456789');
+	for (var i = 0; i < 3; i++) {
+		code += str.charAt(Math.floor(Math.random() * str.length));
+	}
+	alert('tu codigo es: LAB-' + code);
 }
 
-alert(code());
-	
-});
 
-function code() {
-  var code = "";
-  *var str = "123456789";
-  for (var i = 0; i < 3; i++) {
-  	code += number.charAt(Math.floor(Math.random() * str.length));
-  }
-  return code;
-}
 
-alert(code());
-*/
+
+
+
+
+
